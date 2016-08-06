@@ -1,0 +1,18 @@
+Source: libsonic-sai-common
+Section: net
+Priority: optional
+Maintainer: Dell <support@dell.com>
+Build-Depends: debhelper (>= 9), autotools-dev,libsonic-common-dev,libsonic-logging-dev,sonic-sai-api-dev,libsonic-sai-common-utils-dev,gtest-dev
+Standards-Version: 3.9.3
+
+Package: libsonic-sai-common1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},libsonic-common1,libsonic-logging1,libsonic-sai-common-utils1
+Description: This package provides the Dell SAI implementation. It provides NPU-agnostic functionality and interfaces with the NPU-specific implementation using NPU plugin APIs.
+
+
+Package: libsonic-sai-common-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},libsonic-common-dev,libsonic-logging-dev,sonic-sai-api-dev,libsonic-sai-common-utils-dev,libsonic-sai-common1
+Description: This package provides the Dell SAI implementation. It provides NPU-agnostic functionality and interfaces with the NPU-specific implementation using NPU plugin APIs.
+

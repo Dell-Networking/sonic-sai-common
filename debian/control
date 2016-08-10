@@ -4,6 +4,8 @@ Priority: optional
 Maintainer: Dell <support@dell.com>
 Build-Depends: debhelper (>= 9), autotools-dev,libsonic-common-dev,libsonic-logging-dev,sonic-sai-api-dev,libsonic-sai-common-utils-dev,gtest-dev
 Standards-Version: 3.9.3
+Vcs-Browser: https://github.com/dell-networking/sonic-sai-common
+Vcs-Git: https://github.com/dell-networking/sonic-sai-common.git
 
 Package: libsonic-sai-common1
 Architecture: any

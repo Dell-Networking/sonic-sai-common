@@ -20,4 +20,4 @@ src/hash/sai_hash_obj.c
 
 libsai_common_la_CPPFLAGS= -I$(top_srcdir)/inc -I$(includedir)/sonic
 libsai_common_la_LDFLAGS= -version-info 1:1:0
-libsai_common_la_LIBADD= -lsonic_common -lsonic_logging -lsai-common-utils -lpthread -lrt
+libsai_common_la_LIBADD= -lsonic_common -lsonic_logging -lsai-common-utils -lpthread -lrt -ldl

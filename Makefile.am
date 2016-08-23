@@ -18,6 +18,5 @@ src/udf/sai_udf.c  src/udf/sai_udf_group.c  src/udf/sai_udf_utils.c \
 src/hash/sai_hash_obj.c
 
 
+libsai_common_la_CPPFLAGS= -I$(top_srcdir)/inc -I$(includedir)/sonic
 libsai_common_la_LDFLAGS= -lsonic_common -lsonic_logging -lsai-common-utils -lpthread -lrt -version-info 1:1:0
-
-libsai_common_la_CFLAGS= -I$(top_srcdir)/inc -I$(includedir)/sonic

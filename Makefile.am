@@ -12,12 +12,12 @@ src/shell/sai_shell.c  src/shell/sai_shell_init.c \
 src/hostintf/sai_hostintf.c  src/hostintf/sai_hostintf_debug.c  src/hostintf/sai_hostintf_utils.c \
 src/qos/sai_qos_buffer.c  src/qos/sai_qos_init.c    src/qos/sai_qos_pfc_maps.c     src/qos/sai_qos_port.c     src/qos/sai_qos_scheduler.c \
 src/qos/sai_qos_buffer_common.c   src/qos/sai_qos_map_utils.c     src/qos/sai_qos_pg.c     src/qos/sai_qos_queue.c  src/qos/sai_qos_scheduler_util.c \
-src/qos/sai_qos_hierarchy.c   src/qos/sai_qos_maps.c  src/qos/sai_qos_policer.c  src/qos/sai_qos_sched_group.c  src/qos/sai_qos_wred.c \ 
+src/qos/sai_qos_hierarchy.c   src/qos/sai_qos_maps.c  src/qos/sai_qos_policer.c  src/qos/sai_qos_sched_group.c  src/qos/sai_qos_wred.c \
 src/samplepacket/sai_samplepacket_common.c src/samplepacket/sai_samplepacket_debug.c src/samplepacket/sai_samplepacket_port.c src/samplepacket/sai_samplepacket_utils.c \
 src/udf/sai_udf.c  src/udf/sai_udf_group.c  src/udf/sai_udf_utils.c \
 src/hash/sai_hash_obj.c
 
 
-libsai_common_la_LDFLAGS= -lsonic_common -lsonic_logging -lsai-common-utils -lpthread -lrt -version-info 1:1:0
-
-libsai_common_la_CFLAGS= -I$(top_srcdir)/inc -I$(includedir)/sonic
+libsai_common_la_CPPFLAGS= -I$(top_srcdir)/inc -I$(includedir)/sonic
+libsai_common_la_LDFLAGS= -version-info 1:1:0
+libsai_common_la_LIBADD= -lsonic_common -lsonic_logging -lsai-common-utils -lpthread -lrt -ldl

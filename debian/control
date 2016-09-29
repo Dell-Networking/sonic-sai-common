@@ -15,6 +15,6 @@ Description: This package provides the Dell SAI implementation. It provides NPU-
 
 Package: libsonic-sai-common-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},libsonic-common-dev,libsonic-logging-dev,sonic-sai-api-dev,libsonic-sai-common-utils-dev,libsonic-sai-common1
+Depends: ${shlibs:Depends}, ${misc:Depends},libsonic-common-dev,libsonic-logging-dev,sonic-sai-api-dev,libsonic-sai-common-utils-dev,libsonic-sai-common1 (=${binary:Version})
 Description: This package provides the Dell SAI implementation. It provides NPU-agnostic functionality and interfaces with the NPU-specific implementation using NPU plugin APIs.
 

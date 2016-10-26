@@ -6,7 +6,7 @@ This repo contains all SAI public API implementation that is used by the Dell SA
 Description
 -----------
 
-This repo has all public API implemenation for SAI.The NAS component utilizes this SAI API for NPU(network processor) related operations such as (port,l2,l3 related). 
+This repo has all public API implementation for SAI.The NAS component utilizes this SAI API for NPU(network processor) related operations such as (port,l2,l3 related). 
 
 Building
 --------

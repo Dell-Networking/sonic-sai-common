@@ -1,29 +1,27 @@
-SONiC sai-common 
+sonic-sai-common 
 ----------------------
-This repo contains all SAI public API implementation that is used by the Dell SAI implementation.
+This repo contains all switch abstraction interface (SAI) public application programming interface (API) implementation used by the Dell SAI implementation. All public API implementation is included in this repo for SAI. The network adaptation service (NAS) component utilizes this SAI API for network processor unit (NPU)-related operations such as port, l2, and l3 related. 
 
-
-Description
------------
-
-This repo has all public API implementation for SAI.The NAS component utilizes this SAI API for NPU(network processor) related operations such as (port,l2,l3 related). 
-
-Building
+Build
 --------
-Please see the instructions in the sonic-nas-manifest repo for more details on the common build tools.  [Sonic-nas-manifest](https://github.com/Azure/sonic-nas-manifest)
+See [sonic-nas-manifest](https://github.com/Azure/sonic-nas-manifest) for more information on common build tools.
 
-Development Dependencies:
+### Development dependencies
+* `sonic-logging`
+* `sonic-common-utils`
+* `sonic-nas-sai-api`
+* `sonic-sai-common-utils` 
 
- - sonic-logging
- - sonic-common-utils
- - sonic-nas-sai-api
- - sonic-sai-common-utils 
+### Dependent packages
+* `libsonic-logging1` 
+* `libsonic-logging-dev`
+* `libsonic-common1`
+* `libsonic-common-dev` 
+* `sonic-sai-api-dev` 
+* `libsonic-sai-common-utils1`
+* `libsonic-sai-common-utils-dev`
 
-Dependent Packages:
-
- - libsonic-logging1 libsonic-logging-dev libsonic-common1 libsonic-common-dev sonic-sai-api-dev  libsonic-sai-common-utils1 libsonic-sai-common-utils-dev
-
-
-BUILD CMD: sonic_build --dpkg libsonic-logging1 libsonic-logging-dev libsonic-common1 libsonic-common-dev sonic-sai-api-dev  libsonic-sai-common-utils1 libsonic-sai-common-utils-dev -- clean binary
+### Build command
+    sonic_build --dpkg libsonic-logging1 libsonic-logging-dev libsonic-common1 libsonic-common-dev sonic-sai-api-dev  libsonic-sai-common-utils1 libsonic-sai-common-utils-dev -- clean binary
 
 (c) Dell 2016

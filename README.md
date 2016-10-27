@@ -21,7 +21,6 @@ See [sonic-nas-manifest](https://github.com/Azure/sonic-nas-manifest) for more i
 * `libsonic-sai-common-utils1`
 * `libsonic-sai-common-utils-dev`
 
-### Build command
-    sonic_build --dpkg libsonic-logging1 libsonic-logging-dev libsonic-common1 libsonic-common-dev sonic-sai-api-dev  libsonic-sai-common-utils1 libsonic-sai-common-utils-dev -- clean binary
+BUILD CMD: sonic_build --dpkg libsonic-logging1 libsonic-logging-dev libsonic-common1 libsonic-common-dev sonic-sai-api-dev  libsonic-sai-common-utils1 libsonic-sai-common-utils-dev -- clean binary
 
 (c) Dell 2016
